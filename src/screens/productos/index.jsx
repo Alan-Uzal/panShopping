@@ -7,6 +7,9 @@ const Productos = ()=>{
     return(
         <View style={styles.container}>
             <Text>Productos</Text>
+            <Button title = "Ir a Producto" 
+            onPress={()=>{NavigationPreloadManager.navigate("Producto")}}
+            />
         </View>
     )
 }
