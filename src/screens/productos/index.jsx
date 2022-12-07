@@ -1,14 +1,14 @@
-import {Text, View} from "react-native";
+import {Button, Text, View} from "react-native";
 
 import React from "react";
 import {styles} from "./styles";
 
-const Productos = ()=>{
+const Productos = ({navigation})=>{
     return(
         <View style={styles.container}>
             <Text>Productos</Text>
             <Button title = "Ir a Producto" 
-            onPress={()=>{NavigationPreloadManager.navigate("Producto")}}
+                onPress={()=>{navigation.navigate("Producto")}}
             />
         </View>
     )
